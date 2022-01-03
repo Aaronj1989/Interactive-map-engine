@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.web.WebView?>
+
+<ScrollPane fx:id="interactiveDashboardContainer" fitToWidth="true" hbarPolicy="NEVER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="938.0" prefWidth="1155.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.InteractiveDashboardController">
+   <content>
+      <Pane fx:id="contentPane" prefWidth="1053.0">
+         <children>
+            <WebView fx:id="mapPreview" prefHeight="525.0" prefWidth="892.0" />
+            <ListView fx:id="statesListView" layoutX="893.0" onMouseClicked="#addStateToCustomize" prefHeight="932.0" prefWidth="227.0" />
+            <Accordion fx:id="stateCustomizerContainer" layoutY="527.0" prefHeight="393.0" prefWidth="891.0" />
+         </children>
+      </Pane>
+   </content>
+</ScrollPane>
