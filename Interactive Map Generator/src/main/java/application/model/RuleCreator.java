@@ -12,7 +12,7 @@ import cz.vutbr.web.csskit.RuleFactoryImpl;
 import cz.vutbr.web.csskit.TermFactoryImpl;
 
 public class RuleCreator {
-
+//Creates a new rule to add to the css file for a specific US state
 	public static RuleSet cssHoverColorRule(USState state, String color) {
 		RuleFactory rf = RuleFactoryImpl.getInstance();
 		RuleSet rule = rf.createSet();
@@ -37,6 +37,7 @@ public class RuleCreator {
 		declarationsList.add(fill);
 		rule.replaceAll(declarationsList);
 		rule.setSelectors(comboSelectList);
+		System.out.println(rule.get(0));
 		return rule;
 	}
 }
